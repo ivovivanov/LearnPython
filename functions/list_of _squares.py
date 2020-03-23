@@ -1,6 +1,6 @@
 '''
 Function accepts random number of integers as functions arguments.
-Function should return a list of squars of the positive integers
+Function should return a list of squars of the positive integers.
 '''
 
 def list_of_squares(*argv):
