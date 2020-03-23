@@ -1,5 +1,7 @@
 class animal():
+    
     movement = None
+    
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -18,22 +20,26 @@ class animal():
         else:
             raise TypeError("Only integers or animals are allowed")
 
-
-    
+   
 class bird(animal):
+
     movement = 'flying'
+    
     def __init__(self, name, age):
         self.age = age
         self.name = name
+    
     def __str__(self):
         return super().__str__() + " It is moving by {}.".format(__class__.movement)
 
-
-
+    
 class dog(animal):
+    
     movement = 'running'
+    
     def __init__(self, name, age):
         super().__init__(name, age)
+    
     def __str__(self):
         return super().__str__() + " It is moving by {}.".format(__class__.movement)
 
@@ -42,7 +48,6 @@ if __name__ == '__main__':
     print(a)
     b = dog('John', 3)
     print(b)
-
     p = bird('Tweety', 1)
     print(p)
     p.get_old()
