@@ -1,3 +1,8 @@
+'''
+Write a base class animal with twoderived classes bird and dog that change the class variable 'movement'.
+__str__ method should reflect the different class objects.
+The comparisson operator should compare objects based on the age however it should be able to compare an object with an integer(objets's age with the integer)
+'''
 class animal():
     
     movement = None
