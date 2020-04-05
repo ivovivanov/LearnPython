@@ -61,7 +61,7 @@ class credentials():
 
 
 def validate_email(email: str) -> bool:
-    check=re.search('^(\w+[.|\w])*@(\w{2,}[.])*\w{2,}$', email)
+    check=re.search('^(\w+[.|\w])*@(\w{2,}[.])+\w{2,}$', email)
     return True if check is not None else False
 
 
