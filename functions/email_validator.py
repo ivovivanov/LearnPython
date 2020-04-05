@@ -5,7 +5,7 @@ def validate_email(email: str) -> bool:
     return True if check is not None else False
 
 if __name__ == '__main__':
-    print(validate_email('santa.banta.manta@gmail.co.in.xv.fg.gh'))
+    print(validate_email('mr.john.someone@gmail.co.jp.com'))
     print(validate_email('somethingthatisnotvalid'))
     print(validate_email('someone@abv'))
     print(validate_email('someone@abv.a'))
